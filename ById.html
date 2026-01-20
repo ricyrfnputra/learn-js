@@ -1,0 +1,32 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Dom - 1</title>
+  </head>
+  <body>
+    <h1>Hello DOM!</h1>
+
+    <p id="first">Hi, There!</p>
+    <p>JavaScript is fun</p>
+
+
+
+
+    <!-- Js -->
+    <script>
+      const h1 = document.querySelector("h1");
+      const p = document.querySelector("p");
+
+      console.log(h1.textContent);
+      console.log(p.textContent);
+
+      h1.textContent = "Hi JS, from DOM";
+      p.textContent = "Hai ini dari DOM";
+
+      // getElementaryById
+      const elem = document.getElementById("first");
+    </script>
+  </body>
+</html>
