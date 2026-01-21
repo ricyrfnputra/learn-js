@@ -1,0 +1,41 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Simple Logic</title>
+  </head>
+  <body>
+    <script>
+      let harga = 1500000; // Angka asli (Integer)
+
+      let rupiahCustom = new Intl.NumberFormat("id-ID", {
+        style: "currency",
+        currency: "IDR",
+        minimumFractionDigits: 0, // Menghilangkan ,00 di belakang
+      }).format(harga);
+
+      console.log(rupiahCustom); // Output: Rp1.500.000
+
+      let totalBelanja = 500000;
+      let diskon = 0;
+
+      // Logika If-Else
+      if (totalBelanja >= 500000) {
+        diskon = totalBelanja * 0.1; // Diskon 10%
+      }
+
+      let hargaFinal = totalBelanja - diskon;
+
+      // Fungsi Format Rupiah agar bisa dipakai berulang kali
+      function keRupiah(angka) {
+        return "Rp " + angka.toLocaleString("id-ID");
+      }
+
+      console.log("Total Belanja : " + keRupiah(totalBelanja));
+      console.log("Potongan Harga: " + keRupiah(diskon));
+      console.log("---------------------------");
+      console.log("Harus Dibayar : " + keRupiah(hargaFinal));
+    </script>
+  </body>
+</html>
