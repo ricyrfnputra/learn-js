@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Node-List</title>
+</head>
+<body>
+    <ul id="menu1">
+        <li id="first">Satu</li>
+        <li id="second">Dua</li>
+        <li id="third">Tiga</li>
+    </ul>
+    
+    <ul id="menu2">
+        <li>Ricy</li>
+        <li>Rifani</li>
+        <li>Putra</li>
+    </ul>
+
+    <script>
+
+        const list = document.querySelectorAll("li");   // mengambil semua node dari menu1 dan menu2
+        console.info(list);
+
+        const menu1 = document.getElementById("menu1").childNodes;  // mengambil node li hanya dari salah satu id menu
+        console.info(menu1);
+
+        const menu2 = document.getElementById("menu2").childNodes;
+        console.info(menu2);
+
+
+    </script>
+
+</body>
+</html>

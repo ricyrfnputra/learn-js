@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Object - OOP</title>
+</head>
+<body>
+    <script>
+
+        // const ricy = { // 1
+        //     firstName: "Eko"
+        // };
+
+        // const putra = {
+        //     namaDepan: "putra"
+        // };
+
+        // Constructor Function - Exampple 1
+        function Person(firstName, lastName){   // 3 parameter constructor function
+            this.firstName = firstName;
+            this.lastName = lastName;
+            this.sayHello = function (name) {   // 2 methods di constructor function
+                console.info((`Hello ${name}, my name is ${this.firstName}`))
+            }
+        }
+
+        // Example 2
+        function Mobil(){   // contoh tidak pakai parameter constructor function
+            this.namaMobil = "";
+            this.merekMobil = "";
+        }
+
+        // Object 1
+        const ricy = new Person("ricy", "putra");   // 3 add di parameter
+        // ricy.firstName = "ricy";    // add property
+        // ricy.lastName = "putra";
+        ricy.sayHello("zahra");
+ 
+        const zahra = new Person("zahra", "adinda");
+        // zahra.firstName = "zahra";
+        // zahra.lastName = "adinda";
+        zahra.sayHello("ricy");
+
+        // Example 2
+        const civic = new Mobil();  
+        civic.namaMobil = "civic";  // add property
+        civic.merekMobil = "Honda";
+
+        const supra = new Mobil();
+        supra.namaMobil = "supra";
+        supra.merekMobil = "toyota";
+
+
+        // Console 1
+        console.log(ricy);
+        console.log(zahra);
+
+        // Example 2
+        console.log(civic)
+        console.log(supra);
+
+        
+        // Example 3
+
+        function Buah(namaBuah, rasaBuah){
+            this.namaBuah = namaBuah;
+            this.rasaBuah = rasaBuah;
+        }   
+
+        const mangga = new Buah("mangga", "manis");
+        const stroberi = new Buah("stroberi", "asam");
+
+        console.log(mangga);
+        console.log(stroberi);
+
+
+    </script>
+</body>
+</html>

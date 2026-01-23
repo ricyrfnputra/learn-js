@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+
+        let result = 5 == "5";  // ==  sama dengan walau beda type data
+        document.writeln("<p>" + result + "</p>");
+    
+        result = 5 === "5"; // === 
+        document.writeln("<p>" + result + "</p>");
+
+        result = 5 > 10;    // false
+        document.writeln("<p>" + result + "</p>");
+
+        result = 5 < 10;    // true
+        document.writeln("<p>" + result + "</p>");
+
+        result = 5 != 10;
+        document.writeln("<p>" + result + "</p>");
+
+        result = 10 >= 10;
+        document.writeln("<p>" + result + "</p>");
+
+
+        const name = prompt("siapa nama anda:");
+        
+        alert(`Hello ${name}`);
+
+        const masuk = confirm("anda yakin masuk?");
+        if(masuk){
+            const name = prompt("what is your name?");
+            alert(`Kontol lu ${name}`);
+        } else {
+            alert("Bye bye")
+        }
+
+    </script>
+</body>
+</html>
