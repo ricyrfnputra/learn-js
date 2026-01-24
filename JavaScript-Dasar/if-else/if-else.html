@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>If-Else</title>
+</head>
+<body>
+    <script>
+        
+        const nilaiUjian = 80;
+        const nilaiAkhir = 70;
+
+        // If Else
+        if(nilaiUjian > 90){
+            document.writeln("<p>Selamat Lulus Ujian</p>");
+        } else {
+            document.writeln("<p>Belajar Lebih giat</p>");
+        }
+
+        // Else If
+        if(nilaiAkhir <= 60){
+            document.writeln("<p>Nilai kamu C</p>")
+        } else if (nilaiAkhir <= 70){
+            document.writeln("<p>Nilai kamu B</p>")
+        } else {
+            document.writeln("<p>Nilai kamu A</p>")
+        }
+
+
+        // Alert - Prompt - Confirm
+        // alert("Hai pemalas");
+
+        // const nama = prompt("Nama lu sape?");
+
+        // alert(`Hello ${nama}`);
+
+        // const masuk = confirm("Yakin lu masuk sini?");
+        // if(masuk) {
+        //     const name = prompt("Nama lu sape?")
+        //     alert(`Hello ${name}`);
+        // } else {
+        //     alert("Bye");
+        // }
+
+        // Undefind
+
+        let name;
+        if (name === undefined){
+            console.info("Undefined");
+        } else {
+            console.info("Defined");
+        }
+
+        let names = "Ricy Ganteng";
+        if (name === undefined){
+            console.info("Undefined");
+        } else {
+            console.info("Defined");
+        }
+
+        // Array
+        const nammi = ["Gabriel", "Jonathan", "Prince"];
+        delete nammi[2];    // sama saja dengan nammi[2] = undefined;
+
+        if(nammi[2] === undefined){
+            console.info("ARRAY UNDIFINED")
+        } else {
+            console.info("ARRAY DEFINED");
+        }
+
+        // Undefined array value
+        const buah = ["semangka", "anggur", "jeruk"];
+        delete buah[2];
+
+        if(buah[1] === undefined){
+            alert("Hello World")
+        } else {
+            alert(`Hello ${buah[2]}`);
+        }
+
+    </script>
+</body>
+</html>
