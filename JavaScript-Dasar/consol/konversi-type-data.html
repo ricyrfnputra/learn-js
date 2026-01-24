@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Konversi string dan number</title>
+</head>
+<body>
+    <script>
+
+        const value1 = parseInt("1");
+        const value2 = 1;
+        const sum = value1 + value2;
+
+        document.writeln(`<p>${sum}</p>`); 
+        
+        document.writeln(`<p>${parseInt("1.1")}</p>`)   // untuk bilangan bulat
+        document.writeln(`<p>${parseFloat("1.1")}</p>`) // untuk bilangan pecahan
+        document.writeln(`<p>${Number("1.1")}</p>`) // untuk keduanya
+
+
+        document.writeln(`<p>${parseInt("1.5")}</p>`)   // pecahan ke bulat
+
+
+        document.writeln(`<p>${Number("1.1")}</p>`)
+
+
+        // konversi number to string 
+        const a = 1;
+        const b = 1;
+        const total = a.toString() + b.toString();  // toString
+
+        document.writeln(`<p>${total}</p>`)
+
+        // NaN (not a number)
+        document.writeln(`<p>${Number("1salah")}</p>`)  // Number tidak mentolerir kesalahan sedikit pun
+        document.writeln(`<p>${parseFloat("1.1eko")}</p>`)  //  NaN jika kesalahan ada di belakang
+
+        // Operasi pada NaN
+        const first = parseInt("salah");  // salah (NaN)
+        const totalNumbrt = first + 100;
+        
+        document.writeln(`<p>${totalNumbrt}</p>`)
+
+
+        // isNaN() Function // cek apakah sebuah nilai NaN atau tidak
+        document.writeln(`<p>${isNaN(first)}</p>`)
+        document.writeln(`<p>${isNaN(100)}</p>`)
+        document.writeln(`<p>${isNaN(NaN)}</p>`)
+        
+
+    </script>
+</body>
+</html>

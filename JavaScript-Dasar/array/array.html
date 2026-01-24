@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Array Js</title>
+</head>
+<body>
+    <script>
+        // Contoh array
+        const arrayKosong = [];
+        const ceweCantik = ["Angelia", "Gabriela", "Nafisa", "Zahra", "10"];  // array bisa dimasukan data apapun (string/int) atau bahkan array lagi
+        console.table(ceweCantik);
+
+        // Menambah data ke array
+        const names = [];
+        names.push("Ricy"); // menambah data ke array
+        names.push("Rifani", "Putra");
+
+        console.table(names);
+
+        console.info(names[0]);
+        console.info(names[1]);
+        console.info(names[2]);
+
+        names[0] = "Joko";
+        console.table(names);
+
+        // menghapus data index(hilang hanya datanya tidak dengan indexnya)
+        delete names[2];
+
+        console.table(names);
+
+        // Munculkan lagi
+        names[3] = "Ricy Lagi"
+        names.push(["Ricy", "Nando", "Gerry"]); // masukan array didalam array
+
+        console.table(names);
+
+    </script>
+</body>
+</html>
