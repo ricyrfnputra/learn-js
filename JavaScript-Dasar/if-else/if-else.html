@@ -1,84 +1,115 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>If-Else</title>
-</head>
-<body>
+  </head>
+  <body>
     <script>
+      // const nilaiUjian = 80;
+      // const nilaiAkhir = 70;
+
+      // // If Else
+      // if(nilaiUjian > 90){
+      //     document.writeln("<p>Selamat Lulus Ujian</p>");
+      // } else {
+      //     document.writeln("<p>Belajar Lebih giat</p>");
+      // }
+
+      // // Else If
+      // if(nilaiAkhir <= 60){
+      //     document.writeln("<p>Nilai kamu C</p>")
+      // } else if (nilaiAkhir <= 70){
+      //     document.writeln("<p>Nilai kamu B</p>")
+      // } else {
+      //     document.writeln("<p>Nilai kamu A</p>")
+      // }
+
+      // Alert - Prompt - Confirm
+      // alert("Hai pemalas");
+
+      // const nama = prompt("Nama lu sape?");
+
+      // alert(`Hello ${nama}`);
+
+      // const masuk = confirm("Yakin lu masuk sini?");
+      // if(masuk) {
+      //     const name = prompt("Nama lu sape?")
+      //     alert(`Hello ${name}`);
+      // } else {
+      //     alert("Bye");
+      // }
+
+      // Undefind
+
+      // let name;
+      // if (name === undefined){
+      //     console.info("Undefined");
+      // } else {
+      //     console.info("Defined");
+      // }
+
+      // let names = "Ricy Ganteng";
+      // if (name === undefined){
+      //     console.info("Undefined");
+      // } else {
+      //     console.info("Defined");
+      // }
+
+      // Array
+      // const nammi = ["Gabriel", "Jonathan", "Prince"];
+      // delete nammi[2];    // sama saja dengan nammi[2] = undefined;
+
+      // if(nammi[2] === undefined){
+      //     console.info("ARRAY UNDIFINED")
+      // } else {
+      //     console.info("ARRAY DEFINED");
+      // }
+
+      // Undefined array value
+      // const buah = ["semangka", "anggur", "jeruk"];
+      // delete buah[2];
+
+      // if(buah[1] === undefined){
+      //     alert("Hello World")
+      // } else {
+      //     alert(`Hello ${buah[2]}`);
+      // }
+
+      // const nilaiMurid = ["85", "60", "45", "90", "72",];
+      // console.info[1];
+
+      // if(nilaiMurid[2] >= 85){
+      //     console.info("Nilai kamu A");
+      // } else if(nilaiMurid[2] >= 70) {
+      //     console.info("Nilai kamu B");
+      // } else if(nilaiMurid[2] >= 60) {
+      //     console.info("Nilai kamu C");
+      // } else {
+      //     console.info("Nilai kamu D");
+      // };
+
+      // Cek stock barang
+
+      const namaBarang = ["susu", "sabun", "pasta", "mie", "shampo", "gula"];
+      const stockBarang = [5, 0, 12, 15, 10, 20];
+
+     
+      for (let i = 0; i < namaBarang.length; i++) {
         
-        const nilaiUjian = 80;
-        const nilaiAkhir = 70;
 
-        // If Else
-        if(nilaiUjian > 90){
-            document.writeln("<p>Selamat Lulus Ujian</p>");
-        } else {
-            document.writeln("<p>Belajar Lebih giat</p>");
+        if (stockBarang[i] > 10) {
+          console.info(`Stock barang ${namaBarang[i]} masih banyak (${stockBarang[i]})`);
+        } else if (stockBarang[i] > 0 && stockBarang[i] <= 10) {
+          console.info(`Stock barang ${namaBarang[i]} hampir habis (${stockBarang[i]})`);
+        } else if (stockBarang[i] === 0) {
+          console.info(`Stock barang ${namaBarang[i]} sudah habis!`);
         }
-
-        // Else If
-        if(nilaiAkhir <= 60){
-            document.writeln("<p>Nilai kamu C</p>")
-        } else if (nilaiAkhir <= 70){
-            document.writeln("<p>Nilai kamu B</p>")
-        } else {
-            document.writeln("<p>Nilai kamu A</p>")
-        }
+      };
 
 
-        // Alert - Prompt - Confirm
-        // alert("Hai pemalas");
-
-        // const nama = prompt("Nama lu sape?");
-
-        // alert(`Hello ${nama}`);
-
-        // const masuk = confirm("Yakin lu masuk sini?");
-        // if(masuk) {
-        //     const name = prompt("Nama lu sape?")
-        //     alert(`Hello ${name}`);
-        // } else {
-        //     alert("Bye");
-        // }
-
-        // Undefind
-
-        let name;
-        if (name === undefined){
-            console.info("Undefined");
-        } else {
-            console.info("Defined");
-        }
-
-        let names = "Ricy Ganteng";
-        if (name === undefined){
-            console.info("Undefined");
-        } else {
-            console.info("Defined");
-        }
-
-        // Array
-        const nammi = ["Gabriel", "Jonathan", "Prince"];
-        delete nammi[2];    // sama saja dengan nammi[2] = undefined;
-
-        if(nammi[2] === undefined){
-            console.info("ARRAY UNDIFINED")
-        } else {
-            console.info("ARRAY DEFINED");
-        }
-
-        // Undefined array value
-        const buah = ["semangka", "anggur", "jeruk"];
-        delete buah[2];
-
-        if(buah[1] === undefined){
-            alert("Hello World")
-        } else {
-            alert(`Hello ${buah[2]}`);
-        }
 
     </script>
-</body>
+  </body>
 </html>
