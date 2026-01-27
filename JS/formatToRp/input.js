@@ -1,16 +1,16 @@
-// 1. Ambil elemen-elemennya dari HTML
+// DOM
 const inputHarga = document.getElementById('inputHarga');
 const tombol = document.getElementById('tombolCek');
 const displayHasil = document.getElementById('hasil');
 
-// 2. Tunggu tombol diklik (Event Listener)
+
 tombol.addEventListener('click', function() {
     
-    // 3. Ambil NILAI (value) dari input dan ubah jadi Angka
     let harga = Number(inputHarga.value);
     let pesan = "";
 
-    // 4. Logika If-Else
+
+
     if (harga >= 500000) {
         let hargaDiskon = harga * 0.9; // Diskon 10%
         pesan = "Diskon 10%! Jadi: " + formatRupiah(hargaDiskon);
@@ -20,7 +20,6 @@ tombol.addEventListener('click', function() {
         pesan = "Masukkan harga yang valid!";
     }
 
-    // 5. Tampilkan ke layar (Output ke DOM)
     displayHasil.innerText = pesan;
 });
 
