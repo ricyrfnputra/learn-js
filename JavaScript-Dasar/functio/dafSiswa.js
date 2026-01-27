@@ -17,16 +17,16 @@ function tambahSiswa() {
     let hobi = prompt("Hobi siswa:");
     let citaCita = prompt("Cita-Cita:");
 
-    if (nama && umur) {
+    if (nama || umur || hobi || citaCita) { // operator agar tetap data masuk array walau salah satu data tidak di input oleh user
         const dataBaru = buatDataSiswa(nama, umur, hobi, citaCita);
         
         daftarSiswa.push(dataBaru);
         
-        console.log(`✅ Berhasil menambah ${nama}`);
+        console.log(`Berhasil menambah ${nama}`);
         
         console.table(daftarSiswa);
     } else {
-        console.log("❌ Input dibatalkan atau data kosong.");
+        console.log("Input dibatalkan atau data kosong.");
     }
 }
 
