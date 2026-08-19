@@ -37,7 +37,6 @@ const siswa = {
 //                                                 " Nama :   " + siswa.nama + "<br>" +
 //                                                 " Umur :    " + siswa.umur + "<br>" +
 //                                                 " Asal :   " + siswa.asal 
-     
 
 // 2 (Pake ul li)
 document.getElementById("profile").innerHTML = `
