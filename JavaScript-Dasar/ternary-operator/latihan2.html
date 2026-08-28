@@ -1,0 +1,60 @@
+<!doctype html>
+<html lang="id">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Latihan Logika JS</title>
+    <link rel="stylesheet" href="latihan2.css" />
+  </head>
+  <body>
+    <div class="container">
+      <h1>Latihan Logika JavaScript</h1>
+      <div id="output">
+        <script>
+          let nilai = 80;
+          document.writeln(nilai >= 75 ? "Lulus" : "Tidak Lulus");
+
+          // cek diskon
+          function hitungDiskon(totalBelanja) {
+            return totalBelanja >= 100000 ? "Diskon 10%" : "Tidak ada diskon";
+          }
+          document.writeln(hitungDiskon(150000) + "<br><br>");
+
+          // perkalian
+          function kaliDua(angka) {
+            return angka * 2;
+          }
+          document.writeln(kaliDua(10) + "<br><br>");
+
+          // cek negatif n positif
+          function cekBilangan(angka) {
+            return angka >= 0 ? "Positif" : "" | (angka <= 0) ? "Negatif" : "";
+          }
+          document.writeln(cekBilangan(3) + "<br>");
+          document.writeln(cekBilangan(-2) + "<br>");
+
+
+          //
+          let counter = 1;
+          for(; counter <= 10;){  
+            document.writeln(`Perulangan ke ${counter}` + "<br>")  
+            counter++;
+          } 
+
+          //
+          function cekOngkir(totalBelanja){
+            return totalBelanja >= 200000 ? "Gratis Ongkir" : "Kena Ongkir"; 
+          }
+          document.writeln(cekOngkir(180000))
+          
+          function statusSuhu(suhuKota){
+            return suhuKota >= 35 ? "suhu terdeteksi panas" : suhuKota <= 25 ? "suhu terdeteksi sejuk" : suhuKota <= 20 ? "suhu terdeteksi dingin" : "suhu tidak terdeteksi"
+
+          }
+          document.writeln(statusSuhu(19))
+
+        </script>
+      </div>
+    </div>
+  </body>
+</html>
