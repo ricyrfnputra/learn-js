@@ -1,0 +1,48 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Admin</title>
+  </head>
+  <body>
+    <!-- dasboard admin -->
+    <div id="halamanAdmin">
+      <input type="text" id="username" placeholder="masukan username kamu" /> <br /><br />
+      <input type="text" id="password" placeholder="masukan password kamu" /><br />
+      <button onclick="submit()">Submit</button>
+    </div>
+    <div id="outputAdmin">
+
+    </div>
+
+
+    <script>
+
+        const daftarUser = [
+            {username: "ricy", password: "ricy1234", isAdmin: true}
+        ]
+
+
+      function submit() {
+        const username = document.getElementById("username").value;
+        const password = document.getElementById("password").value;
+        const outputEl = document.getElementById("outputEl");
+
+        if (admin === true) {
+          if (username === "ricy1234") {
+            if (password === "ricygantengbanget") {
+              document.write("Login berhasil");
+            } else {
+              document.write("Password anda salah");
+            }
+          } else {
+            alert("Username anda salah");
+        }
+        } else {
+          document.write("Anda bukan admin kocak");
+        }
+      }
+    </script>
+  </body>
+</html>
